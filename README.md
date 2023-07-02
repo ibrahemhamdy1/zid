@@ -284,7 +284,6 @@ Content-Type: application/json
 
 **Example Response:**
 
-```
     Status: 200 OK
     Content-Type: application/json
 
