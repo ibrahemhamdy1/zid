@@ -15,12 +15,6 @@ use App\Http\Controllers\CourierController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-
-
 Route::get('/couriers/{courierName}/waybill', [CourierController::class, 'createWaybill']);
 Route::get('/couriers/{courierName}/waybill/{waybillId}/print', [CourierController::class, 'printWaybillLabel']);
 Route::get('/couriers/{courierName}/waybill/{waybillId}/status', [CourierController::class, 'trackShipmentStatus']);
